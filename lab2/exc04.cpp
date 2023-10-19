@@ -1,4 +1,3 @@
-81% of storage used … You can clean up space or get more storage for Drive, Gmail, and Google Photos.
 /*
 Zaimplementować A z metodą f która nie pobiera ani nie zwaca żadnej wartości.
 Wywołanie konstruktora ma wypisać "A()\n", metody f "A::f()\n", desruktora "~A()\n".
