@@ -12,9 +12,9 @@ int main() {
     double result_1 = log<1.0>(b);
     double result_pi = log<M_PI>(b);
     double result_2 = log<>(b);
-    std::cout << "Logarytm " << b << " o podstawie 2 wynosi " << result_10 << std::endl;
-    std::cout << "Logarytm " << b << " o podstawie PI wynosi " << result_1 << std::endl;
-    std::cout << "Logarytm " << b << " o podstawie 2 wynosi " << result_pi << std::endl;
+    std::cout << "Logarytm " << b << " o podstawie 10 wynosi " << result_10 << std::endl;
+    std::cout << "Logarytm " << b << " o podstawie 1 wynosi " << result_1 << std::endl;
+    std::cout << "Logarytm " << b << " o podstawie PI wynosi " << result_pi << std::endl;
     std::cout << "Logarytm " << b << " o podstawie 2 wynosi " << result_2 << std::endl;
     return 0;
 }
