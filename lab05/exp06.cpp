@@ -2,15 +2,18 @@
 
 class HasId;
 
-template <typename T> long doGetId(const T& t, std::true_type) {  // last argument unused
+template <typename T>
+long doGetId(const T& t, std::true_type) {  // last argument unused
     return t.getId();
 }
 
-template<typename T> long doGetId (const T& t, std::false_type) {  // last argument unused
+template<typename T>
+long doGetId (const T& t, std::false_type) {  // last argument unused
     return reinterpret_cast<long>(&t);
 }
 
-template<typename T> long getId (const T& t) {
+template<typename T>
+long getId (const T& t) {
     return doGetId(t, typename std::is_base_of<HasId, T>());
 }
 
