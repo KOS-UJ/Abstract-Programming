@@ -14,7 +14,7 @@ struct MyStructB {
     value: String,
 }
 
-// Zdefiniuj generyczny trait `MyTrait`
+// Zdefiniuj generyczny trait `Processed`
 // TODO
 
 // Implementacja dla MyStructA

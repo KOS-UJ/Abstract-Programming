@@ -27,7 +27,7 @@ fn generic<T>(_s: SGen<T>) {}
 fn print_info {}
 
 fn main() {
-    // Użycie funkcji nongenerycznych
+    // Użycie funkcji niegenerycznych
     reg_fn(S(A));          // Konkretny typ.
     gen_spec_t(SGen(A));   // Implicytnie określony parametr typu `A`.
     gen_spec_i32(SGen(6)); // Implicytnie określony parametr typu `i32`.
@@ -40,11 +40,13 @@ fn main() {
 
 
     /**
-    1. Zaimplementuj generyczną funkcję `print_info` przyjmującą dowolny argument generyczny `SGen<T>`.
-    Funkcja powinna wyświetlić informację o typie w `SGen` np. "Type: i32" dla `SGen(42)`.
+    1. Zaimplementuj generyczną funkcję `print_info`
+    przyjmującą dowolny argument generyczny `SGen<T>`.
+    Funkcja powinna wyświetlić informację o typie
+    w `SGen` np. "Type: i32" dla `SGen(42)`.
      **/
     // print_info(SGen(42));          // Type: i32
     // print_info(SGen('a'));         // Type: char
-    // print_info(SGen("hello"));     // Type: &'static str
+    // print_info(SGen("hello"));     // Type: &'str
 
 }

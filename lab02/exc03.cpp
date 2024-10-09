@@ -5,7 +5,7 @@ class A
 protected:
     int a_protected_int;
     void a_protected_func();
-    void a_protected_func_over(int);
+    void a_protected_func(int);
 public:
     int a_public_int;
     void a_public_func();
