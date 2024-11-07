@@ -8,16 +8,12 @@
  * operatory porównania.
  */
 
-template<typename X>
-struct FullyComparable{
-    template <typename R>
-    friend bool operator>(const R& l, const R& r);
+template<typename Derived>
+struct FullyComparable {
+    friend bool operator>(const Derived& lhs, const Derived& rhs) {
+        return rhs < lhs;
+    }
 };
-
-template<typename Y>
-bool operator>(const Y& l, const Y& r){
-    return not (l < r) and not (l == r);
-}
 
 
 class A
@@ -38,4 +34,5 @@ int main()
     std::cout << "a1 > a2: " << (a1 > a2) << std::endl;
     std::cout << "a1 >= a2: " << (a1 >= a2) << std::endl;
     std::cout << "a1 <= a2: " << (a1 <= a2) << std::endl;
+    std::cout << "a1 != a2: " << (a1 != a2) << std::endl;
 }
