@@ -1,19 +1,20 @@
 #include <iostream>
-#include <vector>
-#include <limits>
 
-/**
- * Zaimplementować findMax dla kolekcji
- * Dla pustej kolekcji zwrócić minimalną wartość
+/***
+ * Zaimplementować klasę SuperClass oraz podklasy Specific1 i Specific2,
+ * tak aby poniższa funkcja wypisała nazwę podklasy.
+ * Dopuszczalne są zmiany w kodzie, ale poza main.
  */
 
-double findMax(const double * data, const size_t numItems) {
-    // TODO
+
+
+void speak(SuperClass super_class) {
+    super_class.who();
 }
 
 int main() {
-    std::vector<double> double_vec = {2.71, 3.14, 0, -1};
-//    std::vector<double> double_vec = {};
-    std::cout << findMax(double_vec.data(), double_vec.size()) << std::endl;
-    return 0;
+    Specific1 s1;
+    speak(s1); // Specific1
+    Specific2 s2;
+    speak(s2); // Specific2
 }

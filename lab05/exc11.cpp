@@ -1,20 +1,41 @@
+#include <cmath>
 #include <iostream>
+#include <iomanip>
 
 /***
- * Zaimplementować klasę SuperClass oraz podklasy Specific1 i Specific2,
- * tak aby poniższa funkcja wypisała nazwę podklasy.
- * Dopuszczalne są zmiany w kodzie, ale poza main.
+ * Wykorzystując pomysł w poniższym szablonie zaimplementować
+ * minimalną klasę A, która ma zaimplementowane wszystkie
+ * operatory porównania.
  */
 
+template<typename X>
+struct FullyComparable{
+    template <typename R>
+    friend bool operator>(const R& l, const R& r);
+};
 
-
-void speak(SuperClass super_class) {
-    super_class.who();
+template<typename Y>
+bool operator>(const Y& l, const Y& r){
+    return not (l < r) and not (l == r);
 }
 
-int main() {
-    Specific1 s1;
-    speak(s1); // Specific1
-    Specific2 s2;
-    speak(s2); // Specific2
+
+class A
+{
+    int a;
+public:
+    A(int a): a(a) {}
+    // ???
+};
+
+int main()
+{
+    A a1(2);
+    A a2(3);
+
+    std::cout << "a1 == a2: " << (a1 == a2) << std::endl;
+    std::cout << "a1 < a2: " << (a1 < a2) << std::endl;
+    std::cout << "a1 > a2: " << (a1 > a2) << std::endl;
+    std::cout << "a1 >= a2: " << (a1 >= a2) << std::endl;
+    std::cout << "a1 <= a2: " << (a1 <= a2) << std::endl;
 }
