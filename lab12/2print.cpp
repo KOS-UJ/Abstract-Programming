@@ -15,7 +15,7 @@ int main() {
     printf("Pi to %.2f\n", 3.14159);
 
     // std::print
-    std::print("{:<10} | {:>10}\n", left="left", right="right");
+    std::print("{:<10} | {:>10}\n", "left", "right");
     // std::cout
     std::cout << std::left << std::setw(10) << "left"
               << " | " << std::right << std::setw(10) << "right" << '\n';
