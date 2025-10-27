@@ -1,7 +1,8 @@
 /*
 Zaimplementować A z metodą f która nie pobiera ani nie zwaca żadnej wartości.
 Wywołanie konstruktora ma wypisać "A()\n", metody f "A::f()\n", desruktora "~A()\n".
-Zaimplementować B jako pochodną od A, która robi to samo *analogicznie*, tj. wypisuje odpowiednio "B()", "B::f()", "~B()".
+Zaimplementować B jako pochodną od A, która robi to samo *analogicznie*,
+tj. wypisuje odpowiednio "B()", "B::f()", "~B()".
 
 Dla poniższej funkcji main() oczekiwane wyjście to:
 
