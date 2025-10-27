@@ -2,7 +2,8 @@
 
 /***
  * Zaimplementować metody print w strukturach oraz uzupełnić kod w main tak, aby:
- *  - Został wypisany numer porządkowy struktury (widoczny w komentarzu przy każdej strukturze)
+ *  - Został wypisany numer porządkowy struktury
+ *    (widoczny w komentarzu przy każdej strukturze)
  *  - następnie została wypidana *w ładnej postaci* nazwa struktury
  *  - każda struktura została użyta
  *  Np. dla ostatniej struktury print ma wypisać "6. A<i, i, 1>"

@@ -3,7 +3,8 @@
 
 /***
  * Zadanie wymaga C++ 23!
- * Zaimplementować klasę Matrix, która będzie szablonem z następującymi parametrami/metodami:
+ * Zaimplementować klasę Matrix, która będzie szablonem z
+ * następującymi parametrami/metodami:
  * T - typ danych przechowywanych w macierzy
  * X - liczba wierszy macierzy
  * Y - liczba kolumn macierzy (domyślnie równa X)
