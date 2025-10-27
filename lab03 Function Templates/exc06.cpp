@@ -20,7 +20,7 @@ int main() {
               << &y << "[" << y << "] = "
               << minimum(&x, &y) << std::endl;
 
-    std::string str1 = "apple";
+    std::string str1 = "cat";
     std::string str2 = "banana";
     std::cout << "minimum(" << str1 << ", " << str2 << ") = "
               << minimum(str1, str2) << std::endl;
