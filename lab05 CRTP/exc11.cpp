@@ -10,7 +10,8 @@
 
 template<typename Derived>
 struct FullyComparable {
-    friend bool operator>(const Derived& lhs, const Derived& rhs) {
+    bool operator>(const Derived& rhs) const {
+        // ...
         return rhs < lhs;
     }
 };
