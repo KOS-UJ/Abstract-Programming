@@ -4,7 +4,7 @@
 
 /**
  * Klasy wytycznych (call polices)
- * Poprawić kod aby linia 27 była niedozwolona:
+ * Poprawić kod aby linia 28 była niedozwolona:
  *      `stack<int, std::list<std::string>> s3;`
  *      W ramach ćwiczeń skorzystać jawnie z std::allocator<T>
  *      Wskazówka: proszę sprawdzić czym jest std::deque<T>
