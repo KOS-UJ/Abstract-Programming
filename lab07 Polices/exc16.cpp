@@ -4,11 +4,14 @@
 
 /**
  * Dokończyć implementację liczenia średniej:
- * Wynik będzie zależał od danych w następujący sposób: (typ danych -> typ wyniku)
+ * Wynik będzie zależał od danych w następujący sposób: (typ danych -> typ accu)
  * char -> int
  * short -> int
  * int -> long
  * float -> double
+ * long -> long
+ * double -> double
+ * T -> T
  */
 
 template<typename T>
