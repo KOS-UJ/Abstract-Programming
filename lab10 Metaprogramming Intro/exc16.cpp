@@ -2,7 +2,7 @@
 
 /*
  * Bazując na przykładzie zaimplementować funkcję liczącą
- * exp(x) z zdaną dokłądnością.
+ * exp(x) z zdaną dokładnością.
  */
 
 template<int N>
