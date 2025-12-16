@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
- * Bazując na przykłądzie zaimplementować funkcję liczącą
+ * Bazując na przykładzie zaimplementować funkcję liczącą
  * exp(x) z zdaną dokłądnością.
  */
 
