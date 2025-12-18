@@ -2,7 +2,7 @@
 
 /* Wykorzystjąc TMP (Template Meta Programming) narysować świąteczne drzewko.
    Zabronione jest korzystanie z pętli, instrukcji warunkowych itp.
-   Drzewko powinno być wysokości N (parametr szablonu).
+   Drzewko powinno być wysokości N (parametr szablonu).
    Zadania dodatkowe:
    (*)   Dodać korzeń do drzewka (Wypisany jako '#')
    (**)  Dodać drugi parametr który jeżeli jest true to dodaje bombki (wypisane jako 'o')
