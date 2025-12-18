@@ -1,14 +1,17 @@
 #include <iostream>
 
-/* Wykorzystjąc TMP (Template Meta Programming) narysować świąteczne drzewko.
+/* Wykorzystując TMP (Template Meta Programming) narysować świąteczne drzewko.
    Zabronione jest korzystanie z pętli, instrukcji warunkowych itp.
-   Drzewko powinno być wysokości N (parametr szablonu).
-   Zadania dodatkowe:
-   (*)   Dodać korzeń do drzewka (Wypisany jako '#')
-   (**)  Dodać drugi parametr który jeżeli jest true to dodaje bombki (wypisane jako 'o')
-         co N-ty znak drzewka licząc od góry i od lewej do prawej.
-   (***) Dla ujemnej wartości N naarysować drzewko odwrotne tj. zbudowane z korzeni i
-         popękanych bombek ('x') co N-ty znak drzewka licząc od góry i od lewej do prawej.
+   Wymagania:
+   1. Podstawowe: Drzewko o wysokości N zbudowane z gwiazdek '*'.
+   2. (*)   Dodać korzeń do drzewka (wypisany jako '#' pod spodem).
+   3. (**)  Dodać drugi parametr szablonu (bool DRESSED), który jeśli jest true,
+            dodaje bombki ('o') co N-ty znak drzewka, licząc ciągiem od samej góry,
+            od lewej do prawej.
+   4. (***) Dla ujemnej wartości N narysować drzewko odwrócone (szersze u góry),
+            zbudowane z pni ('#') i popękanych bombek ('x') pojawiających się
+            co |N|-ty znak, licząc od góry. Na samym dole (jako korzeń)
+            powinna znaleźć się gwiazdka '*'.
 */
 
 int main()
@@ -44,13 +47,13 @@ int main()
 */
 /* Oczekiwane wyjście dla N=5, DRESSED=true:
     *
-    
+
    ***
-   
+
   o****
-  
+
  o****o*
- 
+
 ***o****o
     #
 */
